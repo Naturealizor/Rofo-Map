@@ -18,6 +18,7 @@
     map.addControl(new maplibre.FullscreenControl(), "top-right");
     map.addControl(new maplibre.ScaleControl(), "bottom-right");
     map.ScaleControl({ maxWidth: 80, unit: "imperial" });
+    map.addControl(new maplibre.AttributionControl(), "bottom-left");
   });
 </script>
 
