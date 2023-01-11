@@ -12,12 +12,11 @@
   let center = {};
 
   onMount(() => {
-    new Marker({ color: "red" }).setLngLat([-75.49375, 39.05163]).addTo(map);
+    new Marker({ color: "blue" }).setLngLat([-75.49375, 39.05163]).addTo(map);
     map.addControl(new maplibre.NavigationControl(), "top-left");
     map.addControl(new maplibre.GeolocateControl(), "top-right");
     map.addControl(new maplibre.FullscreenControl(), "top-right");
     map.addControl(new maplibre.ScaleControl(), "bottom-right");
-    map.ScaleControl({ maxWidth: 80, unit: "imperial" });
   });
 </script>
 
@@ -26,7 +25,7 @@
   <SearchBar />
   <Map
     id="map"
-    style="https://api.maptiler.com/maps/streets/style.json?key=Z5oyxEHjNFqEUZE1KlEg"
+    style="https://api.maptiler.com/maps/streets/style.json?key=pMcJ43PmWeoAuyjWcvbN"
     location={{ lng: -75.49375, lat: 39.05163, zoom: 24 }}
     bind:map
     bind:zoom
@@ -38,6 +37,5 @@
   main {
     width: 100%;
     height: calc(100vh - 83px);
-    position: relative;
   }
 </style>
