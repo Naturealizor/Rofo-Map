@@ -1,11 +1,24 @@
 <script>
-  import maplibreGl from "maplibre-gl";
+  import maplibre from "maplibre-gl";
+
+  let addressSearch;
+  // var geocoder = new maplibre.Geocoder({
+  //   accessToken: maplibre.accessToken,
+  //   maplibregl: maplibre,
+  // });
+
+  function searchLocation() {
+    // get the value of the search input bar
+    const searchInput = document.querySelector("input").value;
+
+    console.log(addressSearch);
+  }
 </script>
 
 <div>
   <!-- create a search input bar for searching addresses -->
-  <input type="search" name="geoloc" id="" />
-  <button>Search</button>
+  <input bind:value={addressSearch} type="search" name="geoloc" id="" />
+  <button on:click={searchLocation}>Search</button>
 </div>
 
 <style>

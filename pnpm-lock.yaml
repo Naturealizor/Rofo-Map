@@ -4,7 +4,7 @@ specifiers:
   '@onsvisual/svelte-maps': ^1.0.26
   '@rollup/plugin-commonjs': ^17.0.0
   '@rollup/plugin-node-resolve': ^11.0.0
-  maplibre-gl: ^2.1.9
+  maplibre-gl: ^2.4.0
   rollup: ^2.3.4
   rollup-plugin-css-only: ^3.1.0
   rollup-plugin-livereload: ^2.0.0
