@@ -1406,8 +1406,8 @@ var app = (function () {
     			create_component(searchbar.$$.fragment);
     			t1 = space();
     			create_component(map_1.$$.fragment);
-    			attr_dev(main, "class", "svelte-o0twwv");
-    			add_location(main, file, 22, 0, 734);
+    			attr_dev(main, "class", "svelte-4k2xb8");
+    			add_location(main, file, 22, 0, 733);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1487,7 +1487,7 @@ var app = (function () {
     	let center = {};
 
     	onMount(() => {
-    		new maplibreGl.Marker({ color: "blue" }).setLngLat([-75.49375, 39.05163]).addTo(map);
+    		new maplibreGl.Marker({ color: "red" }).setLngLat([-75.49375, 39.05163]).addTo(map);
     		map.addControl(new maplibreGl.NavigationControl(), "top-left");
     		map.addControl(new maplibreGl.GeolocateControl(), "top-right");
     		map.addControl(new maplibreGl.FullscreenControl(), "top-right");
