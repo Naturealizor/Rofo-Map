@@ -1310,7 +1310,7 @@ var app = (function () {
 
     	let map_1_props = {
     		id: "map",
-    		style: "https://api.maptiler.com/maps/streets/style.json?key=Z5oyxEHjNFqEUZE1KlEg",
+    		style: "https://api.maptiler.com/maps/streets/style.json?key=pMcJ43PmWeoAuyjWcvbN",
     		location: { lng: -75.49375, lat: 39.05163, zoom: 24 }
     	};
 
@@ -1340,7 +1340,7 @@ var app = (function () {
     			t1 = space();
     			create_component(map_1.$$.fragment);
     			attr_dev(main, "class", "svelte-q1uyo8");
-    			add_location(main, file, 23, 0, 792);
+    			add_location(main, file, 23, 0, 804);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1425,7 +1425,7 @@ var app = (function () {
     		map.addControl(new maplibreGl.GeolocateControl(), "top-right");
     		map.addControl(new maplibreGl.FullscreenControl(), "top-right");
     		map.addControl(new maplibreGl.ScaleControl(), "bottom-right");
-    		map.ScaleControl({ maxWidth: 80, unit: "imperial" });
+    		map.addControl(new maplibreGl.AttributionControl(), "bottom-left");
     	});
 
     	const writable_props = [];

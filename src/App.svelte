@@ -17,7 +17,6 @@
     map.addControl(new maplibre.GeolocateControl(), "top-right");
     map.addControl(new maplibre.FullscreenControl(), "top-right");
     map.addControl(new maplibre.ScaleControl(), "bottom-right");
-    map.ScaleControl({ maxWidth: 80, unit: "imperial" });
     map.addControl(new maplibre.AttributionControl(), "bottom-left");
   });
 </script>
@@ -27,7 +26,7 @@
   <SearchBar />
   <Map
     id="map"
-    style="https://api.maptiler.com/maps/streets/style.json?key=Z5oyxEHjNFqEUZE1KlEg"
+    style="https://api.maptiler.com/maps/streets/style.json?key=pMcJ43PmWeoAuyjWcvbN"
     location={{ lng: -75.49375, lat: 39.05163, zoom: 24 }}
     bind:map
     bind:zoom
