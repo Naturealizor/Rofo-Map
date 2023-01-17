@@ -1,9 +1,12 @@
 <script>
   function flyTo() {
-    map.flyTo({
-      center: [-75.49375, 39.05163],
-      zoom: 24,
-    });
+    map.flyTo(
+      {
+        center: [-75.49375, 39.05163],
+        zoom: 24,
+      },
+      { duration: 2000 }
+    );
   }
 </script>
 
