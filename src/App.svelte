@@ -5,7 +5,7 @@
   import { Marker } from "maplibre-gl";
   import Navbar from "./components/Navbar.svelte";
   import SearchBar from "./components/SearchBar.svelte";
-  import FlyTo from "./components/FlyTo.svelte";
+  import FlyTo from "./components/Flyto.svelte";
 
   let map;
   // State
