@@ -11,7 +11,7 @@
     // get the value of the search input bar
     const searchInput = document.querySelector("input").value;
 
-    console.log(addressSearch);
+    console.log(searchInput);
   }
 </script>
 

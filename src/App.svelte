@@ -5,6 +5,7 @@
   import { Marker } from "maplibre-gl";
   import Navbar from "./components/Navbar.svelte";
   import SearchBar from "./components/SearchBar.svelte";
+  import FlyTo from "./components/FlyTo.svelte";
 
   let map;
   // State
@@ -23,6 +24,7 @@
 <main>
   <Navbar />
   <SearchBar />
+  <FlyTo />
   <Map
     id="map"
     style="https://api.maptiler.com/maps/streets/style.json?key=pMcJ43PmWeoAuyjWcvbN"
