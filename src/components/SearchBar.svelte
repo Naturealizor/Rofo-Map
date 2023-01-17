@@ -2,16 +2,12 @@
   import maplibre from "maplibre-gl";
 
   let addressSearch;
-  // var geocoder = new maplibre.Geocoder({
-  //   accessToken: maplibre.accessToken,
-  //   maplibregl: maplibre,
-  // });
 
   function searchLocation() {
     // get the value of the search input bar
     const searchInput = document.querySelector("input").value;
 
-    console.log(addressSearch);
+    console.log(searchInput);
   }
 </script>
 
@@ -21,6 +17,41 @@
   <button on:click={searchLocation}>Search</button>
 </div>
 
+<!-- <script>
+  let geocoder;
+  let results = [];
+  let query = "";
+  let maptiler;
+
+  onMount(async () => {
+    //create a new instance of the geocoder
+    geocoder = await new maptiler.Geocoder({
+      key: "pMcJ43PmWeoAuyjWcvbN", // replace with your own API key
+    });
+  });
+
+  async function search(query) {
+    // use the geocoder to search for the query
+    results = await geocoder.search({ query });
+  }
+</script>
+
+<input
+  type="text"
+  bind:value={query}
+  placeholder="Enter an address or place name"
+/>
+<button on:click={() => search(query)}>Search</button>
+
+{#if results.length > 0}
+  <ul>
+    {#each results as result}
+      <li>
+        {result.formatted} ({result.position.lat}, {result.position.lng})
+      </li>
+    {/each}
+  </ul>
+{/if} -->
 <style>
   div {
     position: absolute;
