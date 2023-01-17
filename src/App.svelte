@@ -13,7 +13,7 @@
   let center = {};
 
   onMount(() => {
-    new Marker({ color: "blue" }).setLngLat([-75.49375, 39.05163]).addTo(map);
+    new Marker({ color: "red" }).setLngLat([-75.49375, 39.05163]).addTo(map);
     map.addControl(new maplibre.NavigationControl(), "top-left");
     map.addControl(new maplibre.GeolocateControl(), "top-right");
     map.addControl(new maplibre.FullscreenControl(), "top-right");
